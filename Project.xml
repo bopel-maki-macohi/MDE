@@ -4,16 +4,15 @@
 
 	<!-- _________________________________ Custom _______________________________ -->
 
-	<app title="MDE" file="MDE" main="Main" company="Maki" />
 	<app version="1.0"/>
 
 	<!-- _______________________________ Libraries ______________________________ -->
 
 	<haxelib name="flixel" />
-	<haxelib name="openfl" />
-	<haxelib name="lime" />
 
 	<!-- _________________________ Application Settings _________________________ -->
+
+	<app title="MDE" file="MDE" main="Main" company="Maki" />
 
 	<app preloader="flixel.system.FlxPreloader" />
 	<set name="SWF_VERSION" value="11.8" />
@@ -36,6 +35,14 @@
 
 	<!-- ______________________________ Haxedefines _____________________________ -->
 
+	<haxedef name="FLX_NO_HEALTH" />
+
+	<haxedef name="FLX_NO_MOUSE" if="mobile" />
+	<haxedef name="FLX_NO_KEYBOARD" if="mobile" />
+	<haxedef name="FLX_NO_TOUCH" if="desktop" />
+	<haxedef name="FLX_NO_GAMEPAD" />
+
+	<haxedef name="FLX_NO_DEBUG" unless="debug" />
 	<haxedef name="NAPE_RELEASE_BUILD" unless="debug" />
 	<haxedef name="message.reporting" value="pretty" />
 </project>
