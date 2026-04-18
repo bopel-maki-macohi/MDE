@@ -1,16 +1,5 @@
 package mde;
 
-import flixel.FlxState;
+import openfl.display.Sprite;
 
-class Booter extends FlxState
-{
-	override public function create()
-	{
-		super.create();
-	}
-
-	override public function update(elapsed:Float)
-	{
-		super.update(elapsed);
-	}
-}
+class Booter extends Sprite {}

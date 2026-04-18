@@ -1,13 +1,17 @@
 package;
 
-import flixel.FlxGame;
+import mde.Booter;
 import openfl.display.Sprite;
 
 class Main extends Sprite
 {
+	public var booter:Booter;
+
 	public function new()
 	{
 		super();
-		addChild(new FlxGame(0, 0, mde.Booter));
+
+		booter = new Booter();
+		addChild(booter);
 	}
 }
