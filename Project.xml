@@ -9,7 +9,7 @@
 	<!-- _______________________________ Libraries ______________________________ -->
 
 	<haxelib name="openfl" />
-	<haxelib name="openfl" />
+	<haxelib name="lime" />
 
 	<!-- _________________________ Application Settings _________________________ -->
 
@@ -36,14 +36,6 @@
 
 	<!-- ______________________________ Haxedefines _____________________________ -->
 
-	<haxedef name="FLX_NO_HEALTH" />
-
-	<haxedef name="FLX_NO_MOUSE" if="mobile" />
-	<haxedef name="FLX_NO_KEYBOARD" if="mobile" />
-	<haxedef name="FLX_NO_TOUCH" if="desktop" />
-	<haxedef name="FLX_NO_GAMEPAD" />
-
-	<haxedef name="FLX_NO_DEBUG" unless="debug" />
 	<haxedef name="NAPE_RELEASE_BUILD" unless="debug" />
 	<haxedef name="message.reporting" value="pretty" />
 </project>
