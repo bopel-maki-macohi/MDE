@@ -1,8 +1,8 @@
-package;
+package mde;
 
 import flixel.FlxState;
 
-class PlayState extends FlxState
+class Booter extends FlxState
 {
 	override public function create()
 	{
